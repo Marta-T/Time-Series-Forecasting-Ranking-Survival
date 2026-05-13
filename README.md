@@ -16,21 +16,23 @@ The project analyzes the historical stock performance of five major technology c
 
 ### Variables
 
+### Variables
+
 Time Series & Base Features: 
-- 7-day rolling standard deviation (Vol_7d), 
-- 20-day Simple Moving Average (SMA_20), 
-- normalized distance from the 20-day SMA (Dist_SMA_20), 
-- Moving Average Convergence Divergence (MACD), 
-- 14-day Relative Strength Index (RSI), 
-- Bollinger Bands (Upper_BB, Lower_BB, BB_Percent), 
-- 20-day rolling volume mean and standard deviation (Vol_Mean_20, Vol_Std_20), 
-- volume Z-score (Vol_ZScore), 
-- historical price change lags (lag_1 through lag_7).
+- 7-day rolling standard deviation,
+- 20-day Simple Moving Average,
+- normalized distance from the 20-day SMA,
+- Moving Average Convergence Divergence,
+- 14-day Relative Strength Index,
+- Bollinger Bands,
+- 20-day rolling volume mean and standard deviation,
+- volume Z-score, 
+- historical price change lags.
 
 Survival Analysis Additions: 
-- Current daily percentage return (Daily_Pct_Return), 
-- days until a >5% gain is reached (Duration), 
-- binary censoring indicator (Event).
+- Current daily percentage return,
+- days until a >5% gain is reached,
+- binary censoring indicator.
 
 Ranking Model Additions: 
 - Cross-sectional normalized features (daily mean subtracted for RSI, Vol_ZScore, Dist_SMA_20, and MACD), 
